@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+/**THE ENTIRE PAGE**/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/**BEGINNING OF THE 1ST SECTION OF PAGE ON TOP WHERE NAV BAR & 'HEY I'M J GOLD' ARE: FORMATTING APPLIES TO ENTIRE PAGE**/
+
+/**SINCE IT IS WITHIN THE 'BODY' IN HTML, 'AND THE BODY REPRESENTS THE ENTIRE PAGE**/
+section {
+    background-color: rgb(245, 245, 245);
+}
+
+/**LANDING PAGE: THIS REFERS TO THE CSS FORMATTING FOR THE WHOLE PAGE**/
+#landing-page {
+    min-height: 100vh;
+}
+
+
+/**for envelop icon at top-left of page**/
+.mail__btn {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #242424;
+    color: white;
+    position:absolute;
+    bottom: 32px;
+    right: 40px;    
+}
+
+.scroll {
+    position:absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);    
+}
+
+/**for that 'tiny' icon within the scroll bubble in the middle**/
+.scroll__icon {
+    width: 20px;
+    height: 30px;
+    border: 2px solid #242424;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**👇to animate the 'tiny' icon inside the scroll bubble👇**/
+@keyframes scroll {
+0% {
+    transform: translateY(3px);
+}
+100% {
+    transform: translateY(-3px);
+}
+}
+
+.scroll__icon:after {
+    background-color: #242424;
+    content: "";
+    height: 4px;
+    width: 6px;
+    border-radius: 2px;
+/**☝️to animate the 'tiny' icon inside the scroll bubble☝️**/
+    animation: scroll 1000ms infinite alternate-reverse;
+}
+
+button {
+    cursor: pointer;
+}
+
+/**THIS SECTION CODES THE 'HEY! I'M JULIUS GOLD' THAT YOU SEE ON THE PAGE**/
+.header {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 30px;
+}
+
+.social__list {
+    margin-top: 16px;
+    /**use this code 👇, including the 3 codes below**/
+    /**to center an element like the 'linkedin icon'**/
+    /**NOT a text like 'Hey'**/
+    display: flex;    
+}
+
+.social__link {
+    background-color: #f06449;
+    color: white;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    margin-right: 12px;
+    border-radius: 50%;
+    /**use the these 3 codes, 👇 including the one above to**/ 
+    /**center an element like the 'linkedin icon'**/
+    /***NOT text like 'Hey'**/
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.click {
+    transition: all 300ms ease;
+}
+
+.click:hover {
+    transform: scale(1.1);
+}
+.click:active {
+    transform: scale(0.8);
+}
+
+/**to remove TEXT DECORATION from all anchor tags (<a> tags, including linkedin, github, pdf icons)**/
+a {
+    text-decoration: none;
+}
+
+.header__para {
+    font-size: 24px;
+    line-height: 2;
+    max-width: 420px;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.title {
+    font-size: 76px;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1;
+}
+
+.orange {
+    color: #f06449 !important;
+}
+
+/**NAV BAR: BLACK AND WHITE LOGO AT THE TOP LEFT OF PAGE**/
+#personal-logo {
+    height: 50px;
+    width: 50px;
+    filter: invert(1);
+    box-sizing: border-box;
+}
+
+/**BEGINNING OF THE NAV BAR: REMOVING BULLET POINTS FROM ABOUT, PROJECT, CONTACT LINKS AT TOP**/
+li {
+    list-style-type: none;
+}
+
+/**NAV BAR: PROPER ABOUT, PROJECT, CONTACT LINKS AT TOP**/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    padding: 0 20px;
+}
+
+/**to push (about projects contact) away from log at top left to the far right of the top of page**/
+.nav__link--list {
+    display: flex;
+}
+
+/**to spread (about projects contact) out, creating a margin (a space) between them**/
+.nav__link {
+    margin: 0 12px;
+}
+
+/**to remove the underline from and style (about project contact)**/
+.nav__link--anchor {    
+    font-size: 16px;
+    color: #242424;
+    font-weight: 700;
+}
+
+/**to adjust the font-size of black/white theme icon on upper right corner of webpage**/
+.fa-solid {
+    font-size: 20px;
+}
+/***END OF 1ST SECTION OF PAGE END OF 1ST SECTION OF PAGE***/
+
+
+/**BEGINNING OF 2ND SECTION OF PAGE: ANIMATING 'PROJECTS RECTANGLES' SECTION**/
+.container {
+    padding: 50px 0;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+
+/**👇BEGINNING OF FORMATTING for the animating words rectangle in👇**/ 
+/**👇the middle of the 'project rectangle'👇**/
+/***👇VERY IMPORTANT SECTION***VERY IMPORTANT SECTION***VERY IMPORTANT SECTION👇***/
+.project__img {
+    width: 100%;
+}
+
+.project__wrapper {
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0.45);
+    overflow: hidden;
+}
+
+.project__description {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: opacity 300ms, transform 450ms ease;
+    color: white;
+    max-width: 550px;
+}
+
+.project__wrapper--bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1d25;
+    opacity: 0;
+}
+
+.project__wrapper:hover .project__description {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.project__wrapper:hover .project--img {
+    transform: scale(1.07);
+    filter: blur(5px);
+}
+
+.project__wrapper:hover .project__wrapper--bg {
+    opacity: 0.7;
+}
+
+.project__description--title {
+    font-size: 40px;
+}
+
+.project__description--sub-title {
+    margin: 8px;
+}
+
+.project__description--link {
+    color: white;
+    font-size: 20px;
+    margin-right: 16px;
+}
+
+.project__description--para {
+    margin: 16px 0;
+}
+/**☝️END OF FORMATTING for the animating words rectangle in☝️**/ 
+/**☝️the middle of the 'project rectangle'☝️**/
+/***☝️VERY IMPORTANT SECTION***VERY IMPORTANT SECTION***VERY IMPORTANT SECTION☝️***/
+
