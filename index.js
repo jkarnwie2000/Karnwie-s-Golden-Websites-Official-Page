@@ -1,29 +1,33 @@
 
 
 
-
-
 function contact(event) {
     event.preventDefault();
-    //emailjs
-    //.sendForm (
-    //    'service_56y7j1g',
-    //    'template_87bdkhg',
-    //    event.target,
-    //    '476QBa57rXxhABYJa'        
-    //).then(() => {
-    //    console.log('this worked.')
-    //})
+    const loading = document.querySelector('.modal__overlay--loading');
+    const success = document.querySelector('.modal__overlay--success');
+    loading.classList += " modal__overlay--visibel"
+    emailjs
+    .sendForm(
+        'service_56y7j1g',
+        'template_87bdkhg',
+         event.target,
+        '476QBa57rXxhABYJa'        
+    ).then(() => {
+    loading.classList.remove("modal__overlay--visible");
+    success.classList += " modal__overlay--visible"
+        }).catch(() => {
+    loading.classList.remove("modal__overlay--visible")
+    alert("The service is temporarily unavailable. Pleases contact me by email at richjuliusgold2000@yahoo.com")
+    })
 }
 
+let isModalOpen = false
+function toggleModal() {
+isModalOpen = !isModalOpen
+if (isModalOpen) {
+    return document.body.classList.remove("modal--open")
+}
 
-const loading = document.querySelector('.modal__overlay--loading');
-const success = document.querySelector('.modal__overlay--success');
-loading.classList += " modal__overlay--visibel"
-
-setTimeout(() => {    
-    console.log('It worked 1.')
-}, 1000);
-
-
+document.body.classList += " modal--open"
+}
 
