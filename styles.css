@@ -6,6 +6,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /**👇BEGINNING OF THE 1ST SECTION OF PAGE ON TOP WHERE NAV BAR & 'HEY I'M J GOLD' ARE: FORMATTING APPLIES TO ENTIRE PAGE👇**/
 /**👇BEGINNING OF THE 1ST SECTION OF PAGE ON TOP WHERE NAV BAR & 'HEY I'M J GOLD' ARE: FORMATTING APPLIES TO ENTIRE PAGE👇**/
 /**👇BEGINNING OF THE 1ST SECTION OF PAGE ON TOP WHERE NAV BAR & 'HEY I'M J GOLD' ARE: FORMATTING APPLIES TO ENTIRE PAGE👇**/
@@ -325,6 +329,7 @@ nav {
 /**👇BEGINNING OF 3RD & LAST SECTION OF PAGE: THE FOOTER SECTION BELOW👇**/
 
 footer {
+    position: relative;
     background-color: #242424;
     display: flex;
     padding: 6% 0;
@@ -691,7 +696,6 @@ label {
 /***👇BEGINNING OF DARK MODE SECTION BEGINNING OF DARK MODE SECTION☝️***/
 /***👇BEGINNING OF DARK MODE SECTION BEGINNING OF DARK MODE SECTION☝️***/
 /***👇BEGINNING OF DARK MODE SECTION BEGINNING OF DARK MODE SECTION☝️***/
-
 .dark-theme .title,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
@@ -717,15 +721,163 @@ color: white;
     background-color: white;
 }
 
-.dark-theme .mail__btn {
-    background-color: white !important;
-    color: #242424 !important;
+.dark-theme .scroll__icon:after,
+.dark-theme .link__hover-effect--black:after {
+    background-color: white;
 }
 
+.dark-theme .mail__btn {
+    background-color: white;
+    color: #242424;
+}
 /***☝️END OF DARK MODE SECTION END OF DARK MODE SECTION☝️***/
 /***☝️END OF DARK MODE SECTION END OF DARK MODE SECTION☝️***/
 /***☝️END OF DARK MODE SECTION END OF DARK MODE SECTION☝️***/
 /***☝️END OF DARK MODE SECTION END OF DARK MODE SECTION☝️***/
 /***☝️END OF DARK MODE SECTION END OF DARK MODE SECTION☝️***/
+
+
+
+
+/***👇BEGINNING OF BACKGROUND SHAPES SECTION BEGINNING OF BACKGROUND SHAPES SECTION👇***/
+/***👇BEGINNING OF BACKGROUND SHAPES SECTION BEGINNING OF BACKGROUND SHAPES SECTION👇***/
+/***👇BEGINNING OF BACKGROUND SHAPES SECTION BEGINNING OF BACKGROUND SHAPES SECTION👇***/
+/***👇BEGINNING OF BACKGROUND SHAPES SECTION BEGINNING OF BACKGROUND SHAPES SECTION👇***/
+/***👇BEGINNING OF BACKGROUND SHAPES SECTION BEGINNING OF BACKGROUND SHAPES SECTION👇***/
+.shape {
+    position: fixed;
+}
+
+.shape--0 {
+    top: 15vh;
+    left: 5vw;
+}
+
+.shape--1 {
+    top: 15vh;
+    left: 50vw;
+}
+
+.shape--2 {
+    top: 15vh;
+    left: 80vw;
+}
+
+.shape--3 {
+    top: 50vh;
+    left: 5vw;
+}
+
+.shape--4 {
+    top: 50vh;
+    left: 50vw;
+}
+
+.shape--5 {
+    top: 50vh;
+    left: 80vw;
+}
+
+.shape--6 {
+    top: 80vh;
+    left: 5vw;
+}
+
+.shape--7 {
+    top: 80vh;
+    left: 50vw;
+}
+
+.shape--8 {
+    top: 80vh;
+    left: 80vw;
+}
+/***☝️END OF BACKGROUND SHAPES SECTION END OF BACKGROUND SHAPES SECTION☝️***/
+/***☝️END OF BACKGROUND SHAPES SECTION END OF BACKGROUND SHAPES SECTION☝️***/
+/***☝️END OF BACKGROUND SHAPES SECTION END OF BACKGROUND SHAPES SECTION☝️***/
+/***☝️END OF BACKGROUND SHAPES SECTION END OF BACKGROUND SHAPES SECTION☝️***/
+/***☝️END OF BACKGROUND SHAPES SECTION END OF BACKGROUND SHAPES SECTION☝️***/
+
+
+
+
+
+/***👇BEGINNING OF RESPONSIVENESS (SMARTPHONE-, IPAD-, LAPTOP-, DESKTOP-FRIENDLY) SECTION👇***/
+/***👇BEGINNING OF RESPONSIVENESS (SMARTPHONE-, IPAD-, LAPTOP-, DESKTOP-FRIENDLY) SECTION👇***/
+/***👇BEGINNING OF RESPONSIVENESS (SMARTPHONE-, IPAD-, LAPTOP-, DESKTOP-FRIENDLY) SECTION👇***/
+/***👇BEGINNING OF RESPONSIVENESS (SMARTPHONE-, IPAD-, LAPTOP-, DESKTOP-FRIENDLY) SECTION👇***/
+/***👇BEGINNING OF RESPONSIVENESS (SMARTPHONE-, IPAD-, LAPTOP-, DESKTOP-FRIENDLY) SECTION👇***/
+
+/*small phones, tablets, large smartphones*/
+@media (max-width: 768px) {
+    .title {
+        font-size: 80px;
+    }
+    .header__para {
+        font-size: 20px;
+    }
+    .modal {
+        top: 0;
+        left: 0;
+        transform: none;
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+    .modal__half {        
+        width: 100%;
+    }
+}
+
+/*small phones*/
+@media (max-width: 480px) {
+    .title {
+        font-size: 82px;
+    }
+    .header__para {
+        font-size: 18px;
+    }
+    /*meaning just the first child (the first of the nav__links)*/
+    .nav__link:first-child {
+        display: none;
+    }
+    .project__description--para {
+        display: none;
+    }
+    .project__description {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .project__description--sub-title {
+        margin-bottom: 8px;
+    }
+    .modal__half {
+        padding: 40px;
+    }
+}
+
+
+
+/***☝️END OF RESPONSIVENESS (SMARTPHONE-, IPAD-, LAPTOP-, DESKTOP-FRIENDLY) SECTION☝️***/
+/***☝️END OF RESPONSIVENESS (SMARTPHONE-, IPAD-, LAPTOP-, DESKTOP-FRIENDLY) SECTION☝️***/
+/***☝️END OF RESPONSIVENESS (SMARTPHONE-, IPAD-, LAPTOP-, DESKTOP-FRIENDLY) SECTION☝️***/
+/***☝️END OF RESPONSIVENESS (SMARTPHONE-, IPAD-, LAPTOP-, DESKTOP-FRIENDLY) SECTION☝️***/
+/***☝️END OF RESPONSIVENESS (SMARTPHONE-, IPAD-, LAPTOP-, DESKTOP-FRIENDLY) SECTION☝️***/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
