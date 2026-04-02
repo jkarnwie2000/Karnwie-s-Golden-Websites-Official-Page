@@ -36,7 +36,8 @@ section {
     border: none;
     background-color: #242424;
     color: white;
-    position:absolute;
+    z-index: 100;
+    position:fixed;
     bottom: 32px;
     right: 40px;    
 }
@@ -183,17 +184,17 @@ nav {
     padding: 0 20px;
 }
 
-/**to push (about projects contact) away from log at top left to the far right of the top of page**/
+/**to push (about projects contact) away from logo at top left to the far right of the top of page**/
 .nav__link--list {
     display: flex;
 }
 
-/**to spread (about projects contact) out, creating a margin (a space) between them**/
+/**to spread (about, projects, contact) out, creating a margin (a space) between them**/
 .nav__link {
     margin: 0 12px;
 }
 
-/**to remove the underline from and style (about project contact)**/
+/**to remove the underline from and style (the about, project, contact)**/
 .nav__link--anchor {    
     font-size: 16px;
     color: #242424;
@@ -446,7 +447,7 @@ nav,
     overflow: hidden;
     display: flex;
     visibility: hidden;
-    /**for causing contact box to blink open and blink close--refer to toggle section below**/
+    /**for causing contact box to blink open and close--refer to toggle section below**/
     z-index: -1;
     transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
