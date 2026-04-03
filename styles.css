@@ -161,11 +161,10 @@ p {
 }
 
 /**NAV BAR: BLACK AND WHITE LOGO AT THE TOP LEFT OF PAGE**/
-#personal-logo {
-    padding-bottom: 18px;
+#personal-logo {    
     height: 50px;
     width: 50px;
-    filter: invert(1);
+    filter: invert(100%);
     box-sizing: border-box;
 }
 
@@ -345,6 +344,8 @@ footer {
 }
 
 .footer__logo--img {
+    filter: invert(100%);
+    background: transparent;
     width: 70px;
     height: 70px;
 }
