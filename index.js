@@ -37,7 +37,7 @@ function contact(event) {
     event.preventDefault();
     const loading = document.querySelector('.modal__overlay--loading');
     const success = document.querySelector('.modal__overlay--success');
-    loading.classList += " modal__overlay--visibel"
+    loading.classList += " modal__overlay--visible"
     emailjs
     .sendForm(
         'service_56y7j1g',
