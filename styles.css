@@ -846,7 +846,7 @@ color: white;
     .nav__link:first-child {
         display: none;
     }
-    .project__description--para {
+    .project__description-- {
         display: none;
     }
     .project__description {
