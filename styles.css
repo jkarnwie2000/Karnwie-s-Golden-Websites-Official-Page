@@ -192,7 +192,7 @@ nav {
 
 /**to spread (about, projects, contact) out, creating a margin (a space) between them**/
 .nav__link {
-    margin: 0 12px;
+    margin: 0 12px;    
 }
 
 /**to remove the underline from and style (the about, project, contact)**/
@@ -241,6 +241,7 @@ nav {
 /**👇BEGINNING OF FORMATTING for the animated words rectangle in👇**/ 
 /**👇the middle of the 'project rectangle'👇**/
 /***👇VERY IMPORTANT SECTION***VERY IMPORTANT SECTION***VERY IMPORTANT SECTION👇***/
+
 .project__img {
     width: 100%;
     transition: all 600ms ease;
@@ -392,6 +393,11 @@ footer {
     transition: all 300ms ease;
 }
 
+.link__hover-effect:hover:after {
+    left: 0;
+    width: 100%;
+}
+
 .link__hover-effect--white:after {
     background-color: #fff;
 }
@@ -400,10 +406,7 @@ footer {
     background-color: #242424;
 }
 
-.link__hover-effect:hover:after {
-    left: 0;
-    width: 100%;
-}
+
 
 /**see toggle section below**/
 nav, 
